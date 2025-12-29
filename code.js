@@ -26,7 +26,7 @@ function startGame() {
   if (hairback) hairback.className = "hairback";
 
   const man = document.getElementById("man");
-  if (man) man.style.backgroundImage = 'url("public/img/body.png")';
+  if (man) man.style.backgroundImage = 'url("/img/body.png")';
 }
 
 

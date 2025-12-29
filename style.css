@@ -162,44 +162,43 @@ body { background: #35303A; font-family: 'Jaro', sans-serif; }
   display: block;
 }
 
-
-
 /* Clothing classes (images) */
-#man { background-image: url("public/img/body.png"); }
+#man        { background-image: url("/img/body.png"); }
 
-.hairfront1 { background-image: url("public/img/hair1.png"); }
-.hairfront2 { background-image: url("public/img/hair2.png"); }
-.hairfront3 { background-image: url("public/img/hair3.png"); }
-.hairfront4 { background-image: url("public/img/hair4.png"); }
-.hairfront5 { background-image: url("public/img/hair5.png"); }
-.hairback   { background-image: url("public/img/hairback.png"); }
+.hairfront1 { background-image: url("/img/hair1.png"); }
+.hairfront2 { background-image: url("/img/hair2.png"); }
+.hairfront3 { background-image: url("/img/hair3.png"); }
+.hairfront4 { background-image: url("/img/hair4.png"); }
+.hairfront5 { background-image: url("/img/hair5.png"); }
+.hairback   { background-image: url("/img/hairback.png"); }
 
-.necklace1 { background-image: url("public/img/necklace1.png"); }
-.necklace2 { background-image: url("public/img/necklace2.png"); }
-.necklace3 { background-image: url("public/img/necklace3.png"); }
-.necklace4 { background-image: url("public/img/necklace4.png"); }
-.necklace5 { background-image: url("public/img/necklace5.png"); }
+.necklace1 { background-image: url("/img/necklace1.png"); }
+.necklace2 { background-image: url("/img/necklace2.png"); }
+.necklace3 { background-image: url("/img/necklace3.png"); }
+.necklace4 { background-image: url("/img/necklace4.png"); }
+.necklace5 { background-image: url("/img/necklace5.png"); }
 
-.shoe1 { background-image: url("/public/img/shoes1.png"); }
-.shoe2 { background-image: url("public/img/shoes2.png"); }
-.shoe3 { background-image: url("public/img/shoes3.png"); }
-.shoe4 { background-image: url("public/img/shoes4.png"); }
-.shoe5 { background-image: url("public/img/shoes5.png"); }
+.shoe1 { background-image: url("/img/shoes1.png"); }
+.shoe2 { background-image: url("/img/shoes2.png"); }
+.shoe3 { background-image: url("/img/shoes3.png"); }
+.shoe4 { background-image: url("/img/shoes4.png"); }
+.shoe5 { background-image: url("/img/shoes5.png"); }
 
-.shirt1 { background-image: url("public/img/shirt1.png"); }
-.shirt2 { background-image: url("public/img/shirt2.png"); }
-.shirt3 { background-image: url("public/img/shirt3.png"); }
-.shirt4 { background-image: url("public/img/shirt4.png"); }
-.shirt5 { background-image: url("public/img/shirt5.png"); }
+.shirt1 { background-image: url("/img/shirt1.png"); }
+.shirt2 { background-image: url("/img/shirt2.png"); }
+.shirt3 { background-image: url("/img/shirt3.png"); }
+.shirt4 { background-image: url("/img/shirt4.png"); }
+.shirt5 { background-image: url("/img/shirt5.png"); }
 
-.skirt1 { background-image: url("/public/img/skirt1.png"); }
-.skirt2 { background-image: url("public/img/skirt2.png"); }
-.skirt3 { background-image: url("public/img/skirt3.png"); }
-.skirt4 { background-image: url("public/img/skirt4.png"); }
-.skirt5 { background-image: url("public/img/skirt5.png"); }
+.skirt1 { background-image: url("/img/skirt1.png"); }
+.skirt2 { background-image: url("/img/skirt2.png"); }
+.skirt3 { background-image: url("/img/skirt3.png"); }
+.skirt4 { background-image: url("/img/skirt4.png"); }
+.skirt5 { background-image: url("/img/skirt5.png"); }
 
-.background1 { background-image: url("public/img/background1.png"); }
-.background2 { background-image: url("public/img/background2.png"); }
-.background3 { background-image: url("public/img/background3.png"); }
-.background4 { background-image: url("public/img/background4.png"); }
-.background5 { background-image: url("public/img/background5.png"); }
+.background1 { background-image: url("/img/background1.png"); }
+.background2 { background-image: url("/img/background2.png"); }
+.background3 { background-image: url("/img/background3.png"); }
+.background4 { background-image: url("/img/background4.png"); }
+.background5 { background-image: url("/img/background5.png"); }
+
