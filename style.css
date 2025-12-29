@@ -1,0 +1,205 @@
+/* Base reset & body */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: #35303A; font-family: 'Jaro', sans-serif; }
+
+/* Screens */
+.screen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hidden { 
+    display: none !important; 
+}
+
+/* Main Menu */
+#main-menu {
+  background: linear-gradient(360deg, #3d2e3c 0%, #3f2758 63.02%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+/* Sparkles overlay with animation */
+#main-menu::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("img/sparkles.png");
+  background-repeat: repeat;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: twinkle 6s infinite ease-in-out;
+}
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.2; }
+}
+
+/* Title */
+.title {
+  font-family: 'Rye', cursive;
+  font-size: 96px; /* slightly smaller for better fit */
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #AB7DA2;
+  margin: 0;
+}
+
+/* START and QUIT buttons */
+.menu-btn {
+  width: 556px;
+  height: 121px;
+  background: linear-gradient(270deg, #621d44 8.17%, #f3c8e2 46.63%, #62223e 91.83%);
+  border-radius: 51px;
+  border: none;
+  font-family: 'Jaro', sans-serif;
+  font-size: 72px;
+  color: #332E39;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.menu-btn:hover { transform: scale(1.04); filter: brightness(1.05); }
+
+/* Game Screen (centers container) */
+#game-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #35303A;
+}
+
+/* Game Container (frame) */
+#game-container {
+  position: relative;
+  width: 800px;   /* tuned for fit with side buttons */
+  height: 1040px; /* tuned for 16:9-ish character layers */
+  border: 22px solid #50073B;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Background layer fills entire container */
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;      /* fills box proportionally */
+  background-position: center; /* keeps it centered */
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+
+
+/* Character layers: centered stack and scaled */
+#hairback, #man, #shoes, #shirt, #skirt, #necklace, #hairfront {
+  position: absolute;
+  width: 280px;   /* RESCALED to fit comfortably */
+  height: 800px;  /* RESCALED to fit comfortably */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: contain; /* preserves aspect ratio */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Z-order (back to front) */
+#hairback   { z-index: 1; }
+#man        { z-index: 2; }
+#shoes      { z-index: 3; }
+#shirt      { z-index: 4; }
+#skirt      { z-index: 5; }
+#necklace   { z-index: 6; }
+#hairfront  { z-index: 7; }
+
+/* Side buttons */
+.side-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.side-buttons.left  { left: 24px; }
+.side-buttons.right { right: 24px; }
+
+/* Icon buttons: bigger, clean, no pink circles */
+
+.icon-btn {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;            /* Makes the button perfectly circular */
+  background: none;              /* Removes solid background */
+  border: none;
+  box-shadow: none;              /* Optional: remove shadow if you want it cleaner */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;                    /* Removes extra spacing */
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.icon-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+.icon-btn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;            /* Ensures the image itself is circular */
+  pointer-events: none;
+  display: block;
+}
+
+
+
+/* Clothing classes (images) */
+#man { background-image: url("img/body.png"); }
+
+.hairfront1 { background-image: url("img/hair1.png"); }
+.hairfront2 { background-image: url("img/hair2.png"); }
+.hairfront3 { background-image: url("img/hair3.png"); }
+.hairfront4 { background-image: url("img/hair4.png"); }
+.hairfront5 { background-image: url("img/hair5.png"); }
+.hairback   { background-image: url("img/hairback.png"); }
+
+.necklace1 { background-image: url("img/necklace1.png"); }
+.necklace2 { background-image: url("img/necklace2.png"); }
+.necklace3 { background-image: url("img/necklace3.png"); }
+.necklace4 { background-image: url("img/necklace4.png"); }
+.necklace5 { background-image: url("img/necklace5.png"); }
+
+.shoe1 { background-image: url("img/shoes1.png"); }
+.shoe2 { background-image: url("img/shoes2.png"); }
+.shoe3 { background-image: url("img/shoes3.png"); }
+.shoe4 { background-image: url("img/shoes4.png"); }
+.shoe5 { background-image: url("img/shoes5.png"); }
+
+.shirt1 { background-image: url("img/shirt1.png"); }
+.shirt2 { background-image: url("img/shirt2.png"); }
+.shirt3 { background-image: url("img/shirt3.png"); }
+.shirt4 { background-image: url("img/shirt4.png"); }
+.shirt5 { background-image: url("img/shirt5.png"); }
+
+.skirt1 { background-image: url("img/skirt1.png"); }
+.skirt2 { background-image: url("img/skirt2.png"); }
+.skirt3 { background-image: url("img/skirt3.png"); }
+.skirt4 { background-image: url("img/skirt4.png"); }
+.skirt5 { background-image: url("img/skirt5.png"); }
+
+.background1 { background-image: url("img/background1.png"); }
+.background2 { background-image: url("img/background2.png"); }
+.background3 { background-image: url("img/background3.png"); }
+.background4 { background-image: url("img/background4.png"); }
+.background5 { background-image: url("img/background5.png"); }
