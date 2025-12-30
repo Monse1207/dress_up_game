@@ -31,8 +31,6 @@ function startGame() {
 
 
 
-
-
 function quitGame() {
   alert("Thanks for playing Whimsy Dress!");
 }

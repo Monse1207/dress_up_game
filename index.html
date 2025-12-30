@@ -13,6 +13,7 @@
         <button class="menu-btn" onclick="startGame()">START</button>
         <button class="menu-btn" onclick="quitGame()">QUIT</button>
     </div>
+
     <!--Screen 2: Game-->
     <div id="game-screen" class="screen hidden">
         <div id="game-container">
@@ -24,22 +25,36 @@
             <div id="skirt"></div>
             <div id="necklace"></div>
             <div id="hairfront"></div>
-           <!-- Dress up  left buttons -->
+
+            <!-- Dress up left buttons -->
             <div class="side-buttons left">
-                <button class="icon-btn" onclick="cycleHair()"><img src="/img/boton_hair.png" alt="Hair"></button>
-                <button class="icon-btn" onclick="cycleNecklace()"><img src="/img/boton_necklace.png" alt="Necklace"></button>
-                <button class="icon-btn" onclick="cycleShoes()"><img src="/img/boton_shoes.png" alt="Shoes"></button>    
+                <button class="icon-btn" onclick="cycleHair()">
+                    <img src="./img/boton_hair.png" alt="Hair">
+                </button>
+                <button class="icon-btn" onclick="cycleNecklace()">
+                    <img src="./img/boton_necklace.png" alt="Necklace">
+                </button>
+                <button class="icon-btn" onclick="cycleShoes()">
+                    <img src="./img/boton_shoes.png" alt="Shoes">
+                </button>    
             </div>
 
-            <!-- Dress up rigiht buttons-->
-             <div class="side-buttons right">
-                <button class="icon-btn" onclick="cycleShirt()"><img src="/img/boton_shirt.png" alt="Shirt"></button>
-                <button class="icon-btn" onclick="cycleSkirt()"><img src="/img/boton_skirt.png" alt="Skirt"></button>
-                <button class="icon-btn" onclick="cycleBackground()"><img src="/img/boton_background.png" alt="Background"></button>
-             </div>  
+            <!-- Dress up right buttons -->
+            <div class="side-buttons right">
+                <button class="icon-btn" onclick="cycleShirt()">
+                    <img src="./img/boton_shirt.png" alt="Shirt">
+                </button>
+                <button class="icon-btn" onclick="cycleSkirt()">
+                    <img src="./img/boton_skirt.png" alt="Skirt">
+                </button>
+                <button class="icon-btn" onclick="cycleBackground()">
+                    <img src="./img/boton_background.png" alt="Background">
+                </button>
+            </div>  
         </div>
     </div>
 
     <script src="code.js"></script>
 </body>
 </html>
+
