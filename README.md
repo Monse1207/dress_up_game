@@ -12,7 +12,7 @@ You can see the game live at: https://monse1207.github.io/dress_up_game/
 
 
 
-## How to Play![Uploading dress_up_game.png…]()
+## How to Play!
 
 - Click **START** to begin.
 - Use the side buttons to change hair, necklace, shoes, shirt, skirt, and background.
