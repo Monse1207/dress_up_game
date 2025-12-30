@@ -28,7 +28,6 @@ You can see the game live at: https://monse1207.github.io/dress_up_game/
 
 ## Deployment
 - GitHub Pages: [https://monse1207.github.io/dress_up_game/](https://monse1207.github.io/dress_up_game/)
-- Vercel: [https://dress-up-game-kohl.vercel.app](https://dress-up-game-kohl.vercel.app)
 
 ## License
 All original artwork (character, clothing, and backgrounds) is © Monserrat.  
