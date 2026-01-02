@@ -29,11 +29,27 @@ function startGame() {
   if (man) man.className = "man";
 }
 
+function returnToMenu() {
+  console.log("Return button clicked");
 
+  const menu = document.getElementById("main-menu");
+  const game = document.getElementById("game-screen");
 
-function quitGame() {
-  alert("Thanks for playing Whimsy Dress!");
+  if (menu && game) {
+    game.classList.add("hidden");
+    menu.classList.remove("hidden");
+  } else {
+    console.error("Menu or game screen not found in DOM");
+  }
 }
+
+/* Utility: preserve base ID styling and add clothing class */
+function applyClass(elId, className) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  el.className = `${elId} ${className}`;
+}
+
 
 /* Utility: preserve base ID styling and add clothing class */
 function applyClass(elId, className) {
