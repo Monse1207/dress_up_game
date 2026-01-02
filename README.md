@@ -2,6 +2,8 @@
 
 Whimsy Dress is a web-based dress-up game built with HTML, CSS, and JavaScript.  
 Players can style a character by cycling through different outfits, accessories, and backgrounds.
+
+You can see the game live at: https://monse1207.github.io/dress_up_game/
 <img width="1901" height="891" alt="Captura de pantalla 2025-12-26 182431" src="https://github.com/user-attachments/assets/ff7455ca-2156-496f-ab57-09b2c4633bea" />
 
 <img width="776" height="906" alt="dress_up_game" src="https://github.com/user-attachments/assets/f3cd9143-acd1-4d9f-9c41-7efa8ba92024" />
@@ -10,7 +12,7 @@ Players can style a character by cycling through different outfits, accessories,
 
 
 
-## How to Play![Uploading dress_up_game.png…]()
+## How to Play!
 
 - Click **START** to begin.
 - Use the side buttons to change hair, necklace, shoes, shirt, skirt, and background.
@@ -26,7 +28,6 @@ Players can style a character by cycling through different outfits, accessories,
 
 ## Deployment
 - GitHub Pages: [https://monse1207.github.io/dress_up_game/](https://monse1207.github.io/dress_up_game/)
-- Vercel: [https://dress-up-game-kohl.vercel.app](https://dress-up-game-kohl.vercel.app)
 
 ## License
 All original artwork (character, clothing, and backgrounds) is © Monserrat.  
