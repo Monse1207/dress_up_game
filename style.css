@@ -202,18 +202,24 @@ body { background: #35303A; font-family: 'Jaro', sans-serif; }
 .background4 { background-image: url("./img/background4.png"); }
 .background5 { background-image: url("./img/background5.png"); }
 
-/* Botón RETURN en esquina superior izquierda */
-.return-btn-container {
+
+/* Botón RETURN usando imagen PNG completa */
+.return-btn {
   position: absolute;
-  top: 20px;      /* distancia desde arriba */
-  left: 20px;     /* distancia desde la izquierda */
-  z-index: 10;    /* asegura que quede por encima del fondo y capas */
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  bottom: 20px;
+  background-image: url("./img/boton_return.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.return-btn-container .menu-btn {
-  width: 200px;   /* más pequeño que el START */
-  height: 60px;
-  font-size: 32px;
-  border-radius: 30px;
+.return-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
-
