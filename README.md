@@ -17,7 +17,7 @@ You can see the game live at: https://monse1207.github.io/dress_up_game/
 - Click **START** to begin.
 - Use the side buttons to change hair, necklace, shoes, shirt, skirt, and background.
 - Mix and match styles to create your own look.
-- Click **QUIT** to exit.
+- Click **Return button** to go back to main.
 
 ## Design and Assets
 - **UI Design** created in Figma for layout, buttons, and overall interface.
@@ -32,7 +32,7 @@ You can see the game live at: https://monse1207.github.io/dress_up_game/
 ## License
 All original artwork (character, clothing, and backgrounds) is © Monserrat.  
 Please do not copy, redistribute, or use commercially without permission.  
-Code is open for learning and inspiration.
+
 
 
 
